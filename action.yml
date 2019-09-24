@@ -1,0 +1,14 @@
+name: "Test Container Action"
+description: "test container action"
+inputs:
+  greet:
+    description: "greet name"
+    required: true
+    default: "world"
+outputs:
+  time:
+    description: "timestamp"
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args
